@@ -1,0 +1,407 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Precision Tools Inc.</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+            color:#333;
+        }
+
+       
+
+        header{
+            background:#1f2937;
+            color:white;
+            padding:15px 40px;
+            position:sticky;
+            top:0;
+            z-index:1000;
+        }
+
+        .navbar{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .navbar h1{
+            font-size:28px;
+        }
+
+        .navbar ul{
+            list-style:none;
+            display:flex;
+        }
+
+        .navbar ul li{
+            margin-left:20px;
+        }
+
+        .navbar ul li a{
+            text-decoration:none;
+            color:white;
+            font-size:18px;
+        }
+
+        .navbar ul li a:hover{
+            color:#00bcd4;
+        }
+
+      
+
+        .hero{
+            height:90vh;
+            background:linear-gradient(rgba(0,0,0,0.6),
+            rgba(0,0,0,0.6)),
+            url('https://images.unsplash.com/photo-1504307651254-35680f356dfd');
+            background-size:cover;
+            background-position:center;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            color:white;
+            padding:20px;
+        }
+
+        .hero-content h2{
+            font-size:50px;
+            margin-bottom:20px;
+        }
+
+        .hero-content p{
+            font-size:20px;
+            margin-bottom:25px;
+        }
+
+        .hero-content button{
+            padding:12px 30px;
+            border:none;
+            background:#00bcd4;
+            color:white;
+            font-size:18px;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        .hero-content button:hover{
+            background:#0097a7;
+        }
+
+        /* About */
+
+        .about{
+            padding:60px 20px;
+            text-align:center;
+            background:white;
+        }
+
+        .about h2{
+            font-size:36px;
+            margin-bottom:20px;
+        }
+
+        .about p{
+            max-width:800px;
+            margin:auto;
+            line-height:1.8;
+            font-size:18px;
+        }
+
+       
+
+        .team{
+            padding:60px 20px;
+            background:#e5e7eb;
+            text-align:center;
+        }
+
+        .team h2{
+            font-size:36px;
+            margin-bottom:40px;
+        }
+
+        .team-container{
+            display:flex;
+            justify-content:center;
+            gap:30px;
+            flex-wrap:wrap;
+        }
+
+        .card{
+            background:white;
+            width:250px;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.2);
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+        }
+
+        .card img{
+            width:100px;
+            height:100px;
+            border-radius:50%;
+            margin-bottom:15px;
+        }
+
+        .card h3{
+            margin-bottom:10px;
+        }
+
+        .card p{
+            color:gray;
+        }
+
+        
+
+        .contact{
+            padding:60px 20px;
+            text-align:center;
+            background:white;
+        }
+
+        .contact h2{
+            font-size:36px;
+            margin-bottom:30px;
+        }
+
+        form{
+            max-width:500px;
+            margin:auto;
+        }
+
+        input, textarea{
+            width:100%;
+            padding:12px;
+            margin-bottom:20px;
+            border:1px solid #ccc;
+            border-radius:5px;
+            font-size:16px;
+        }
+
+        input[type="submit"]{
+            background:#1f2937;
+            color:white;
+            border:none;
+            cursor:pointer;
+        }
+
+        input[type="submit"]:hover{
+            background:#00bcd4;
+        }
+
+        #message{
+            margin-top:15px;
+            font-weight:bold;
+        }
+
+       
+
+        footer{
+            background:#1f2937;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        
+
+        @media(max-width:768px){
+
+            .navbar{
+                flex-direction:column;
+            }
+
+            .navbar ul{
+                margin-top:10px;
+            }
+
+            .hero-content h2{
+                font-size:35px;
+            }
+
+            .team-container{
+                flex-direction:column;
+                align-items:center;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    
+
+    <header>
+
+        <div class="navbar">
+
+            <h1>Precision Tools Inc.</h1>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </div>
+
+    </header>
+
+   
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h2>Modern Manufacturing Solutions</h2>
+
+            <p>
+                Delivering high-quality industrial tools and precision engineering services.
+            </p>
+
+            <button onclick="showMessage()">Get Started</button>
+
+        </div>
+
+    </section>
+
+    
+
+    <section class="about" id="about">
+
+        <h2>About Us</h2>
+
+        <p>
+            Precision Tools Inc. is a trusted manufacturing company
+            focused on quality products, innovation, and customer satisfaction.
+        </p>
+
+    </section>
+
+    
+
+    <section class="team" id="team">
+
+        <h2>Meet The Team</h2>
+
+        <div class="team-container">
+
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR77_Y0Na_t_INY7YJegDvc7WeaTOnIFkyVw&s">
+                <h3>John Doe</h3>
+                <p>CEO</p>
+            </div>
+
+            <div class="card">
+                <img src="https://media.defense.gov/2019/Feb/13/2002089515/-1/-1/0/180709-A-SP580-001.JPG">
+                <h3>Jane Smith</h3>
+                <p>Engineer</p>
+            </div>
+
+            <div class="card">
+                <img src="https://media.licdn.com/dms/image/v2/C4D03AQE9Fg2rJ3OIpQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1623489924746?e=2147483647&v=beta&t=s1oWcYId7-eG1q9XUMO9592VxvmCfJ2S2HQUgT_LqOU">
+                <h3>Mike Johnson</h3>
+                <p>Designer</p>
+            </div>
+
+        </div>
+
+    </section>
+
+   
+
+    <section class="contact" id="contact">
+
+        <h2>Contact Us</h2>
+
+        <form id="contactForm">
+
+            <input type="text" id="name" placeholder="Enter Your Name">
+
+            <input type="email" id="email" placeholder="Enter Your Email">
+
+            <input type="tel" id="phone" placeholder="Enter Phone Number">
+
+            <textarea id="msg" rows="5" placeholder="Enter Your Message"></textarea>
+
+            <input type="submit" value="Send Message">
+
+            <p id="message"></p>
+
+        </form>
+
+    </section>
+
+   
+
+    <footer>
+
+        <p>
+            © 2026 Precision Tools Inc. | All Rights Reserved
+        </p>
+
+    </footer>
+
+    
+
+    <script>
+
+       
+        function showMessage(){
+            alert("Welcome to Precision Tools Inc!");
+        }
+
+        
+
+        document.getElementById("contactForm").addEventListener("submit", function(event){
+
+            event.preventDefault();
+
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let phone = document.getElementById("phone").value;
+            let msg = document.getElementById("msg").value;
+
+            let message = document.getElementById("message");
+
+            if(name === "" || email === "" || phone === "" || msg === ""){
+
+                message.style.color = "red";
+                message.innerHTML = "Please fill all fields.";
+
+            }
+            else{
+
+                message.style.color = "green";
+                message.innerHTML = "Form submitted successfully!";
+
+                document.getElementById("contactForm").reset();
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>
