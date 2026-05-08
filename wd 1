@@ -1,0 +1,125 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precision Tools Inc.</title>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Precision Tools Inc.</h1>
+
+        <nav>
+            <a href="#home">Home</a> |
+            <a href="#about">About</a> |
+            <a href="#team">Meet The Team</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <hr>
+    </header>
+
+    <section id="home">
+
+        <h2>Modern Manufacturing Solutions</h2>
+
+        <p>
+            Precision Tools Inc. provides high-quality manufacturing
+            tools and industrial solutions for modern businesses.
+        </p>
+
+        <button>Get Started</button>
+
+        <hr>
+
+    </section>
+
+    <section id="about">
+
+        <h2>About Us</h2>
+
+        <p>
+            We are a local manufacturing company dedicated to
+            delivering durable and precision-engineered tools
+            for industries worldwide.
+        </p>
+
+        <hr>
+
+    </section>
+
+    <section id="team">
+
+        <h2>Meet The Team</h2>
+
+        <div>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR77_Y0Na_t_INY7YJegDvc7WeaTOnIFkyVw&s">
+            <h3>John Doe</h3>
+            <p>CEO</p>
+        </div>
+
+        <br>
+
+      
+        <div>
+          <img src="https://media.defense.gov/2019/Feb/13/2002089515/-1/-1/0/180709-A-SP580-001.JPG">
+            <h3>Jane Smith</h3>
+            <p>Engineer</p>
+        </div>
+
+        <br>
+
+     
+        <div>
+           <img src="https://media.licdn.com/dms/image/v2/C4D03AQE9Fg2rJ3OIpQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1623489924746?e=2147483647&v=beta&t=s1oWcYId7-eG1q9XUMO9592VxvmCfJ2S2HQUgT_LqOU">
+            <h3>Mike Johnson</h3>
+            <p>Designer</p>
+        </div>
+
+        <hr>
+
+    </section>
+
+    <section id="contact">
+
+        <h2>Contact Us</h2>
+
+        <form>
+
+            <label>Full Name:</label><br>
+            <input type="text" placeholder="Enter your name" required>
+            <br><br>
+
+            <label>Email:</label><br>
+            <input type="email" placeholder="Enter your email" required>
+            <br><br>
+
+            <label>Phone Number:</label><br>
+            <input type="tel" placeholder="Enter phone number" required>
+            <br><br>
+
+            <label>Message:</label><br>
+            <textarea rows="5" cols="30" placeholder="Enter your message"></textarea>
+            <br><br>
+
+            <input type="submit" value="Send Message">
+
+        </form>
+
+    </section>
+
+    <hr>
+
+   
+    <footer>
+
+        <p>
+            © 2026 Precision Tools Inc. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
