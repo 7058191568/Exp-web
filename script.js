@@ -1,6 +1,4 @@
-
-
-    <script>
+ <script>
 
        
         function showMessage(){
